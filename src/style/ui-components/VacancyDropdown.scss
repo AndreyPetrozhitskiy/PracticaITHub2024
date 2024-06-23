@@ -8,6 +8,7 @@
 	gap: 10px;
 	position: relative;
 	z-index: 1;
+
 	&__p {
 		font-size: 14px;
 		font-family: $font;
@@ -31,6 +32,7 @@
 	}
 	&__drop {
 		position: absolute;
+		background-color: $color-white;
 		width: 127px;
 		height: 156px;
 		top: 20px;

@@ -1,0 +1,44 @@
+@use '../variables' as *;
+@use '../mixins';
+.Vacancy {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__info {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		h1 {
+			width: 100%;
+			font-family: $font-bold;
+			font-size: 20px;
+			line-height: 24.41px;
+			text-align: center;
+			color: $color-black;
+		}
+		p {
+			width: 70%;
+			font-family: $font;
+			color: $color-grey;
+			text-align: center;
+			line-height: 15.87px;
+			font-size: 13px;
+		}
+	}
+	&__tasks {
+		width: 100%;
+		height: auto;
+		display: flex;
+		&--container {
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+	}
+}

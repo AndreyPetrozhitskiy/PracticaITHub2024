@@ -1,9 +1,32 @@
 import LooperGroup from '../image/LooperGroup.svg'
 import Manager from '../image/manager.svg'
 import '../style/components/Home.scss'
+import Card from '../ui-components/Card'
 import StartButton from '../ui-components/StartButton'
 import VacancyDropdown from '../ui-components/VacancyDropdown'
 const Home = () => {
+	const cards = [
+		{
+			title: 'Женский парикмахер',
+			address: 'Советский проспект, 2а',
+		},
+		{
+			title: 'Мужской парикмахер',
+			address: 'Советский проспект, 2а',
+		},
+		{
+			title: 'Администратор',
+			address: 'Советский проспект, 2а',
+		},
+		{
+			title: 'Промоутер',
+			address: 'Советский проспект, 2а',
+		},
+		{
+			title: 'Мастер маникюра',
+			address: 'Советский проспект, 2а',
+		},
+	]
 	return (
 		<div className='Home'>
 			<div className='Home__start'>
@@ -24,7 +47,11 @@ const Home = () => {
 					{/* Dropdown */}
 					<VacancyDropdown />
 				</div>
-				<div className='Home__vacancy--cards'></div>
+				<div className='Home__vacancy--cards'>
+					{cards.map((card, index) => (
+						<Card title={card.title} address={card.address} key={index} />
+					))}
+				</div>
 			</div>
 		</div>
 	)

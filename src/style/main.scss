@@ -26,3 +26,7 @@ body {
 	flex-direction: column;
 	border: 1px solid black;
 }
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}

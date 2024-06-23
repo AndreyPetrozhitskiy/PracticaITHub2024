@@ -1,0 +1,25 @@
+@use '../variables' as *;
+@use '../mixins';
+.Footer {
+	width: 100%;
+	height: 46px;
+	display: flex;
+	padding: 16px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $color-red;
+	p {
+		font-size: 10px;
+		font-family: $font;
+		line-height: 12.21px;
+		color: $color-white;
+	}
+	&__social {
+		display: flex;
+		gap: 12px;
+		img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
