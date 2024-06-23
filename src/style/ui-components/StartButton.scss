@@ -1,0 +1,31 @@
+@use '../variables' as *;
+@use '../mixins';
+
+.StartButton {
+	position: relative;
+	overflow: hidden; // Обеспечивает, что внутренние элементы не выходят за границы скругления
+	width: 270px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: $color-white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: red;
+		color: $color-white;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	text-transform: uppercase;
+	color: $color-black;
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	font-family: $font;
+	align-items: center;
+}

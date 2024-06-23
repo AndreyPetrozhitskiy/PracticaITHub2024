@@ -1,0 +1,38 @@
+@use 'variables' as *;
+
+@mixin bold-25 {
+	font-size: 25px;
+	font-weight: bold;
+}
+@mixin bold-22 {
+	font-size: 22px;
+	font-weight: bold;
+}
+@mixin bold-20 {
+	font-size: 20px;
+	font-weight: bold;
+}
+@mixin bold-10 {
+	font-size: 10px;
+	font-weight: bold;
+}
+@mixin regular-16 {
+	font-size: 16px;
+	font-weight: normal;
+}
+@mixin regular-15 {
+	font-size: 15px;
+	font-weight: normal;
+}
+@mixin regular-13 {
+	font-size: 13px;
+	font-weight: normal;
+}
+@mixin regular-10 {
+	font-size: 13px;
+	font-weight: normal;
+}
+@mixin regular-8 {
+	font-size: 13px;
+	font-weight: normal;
+}

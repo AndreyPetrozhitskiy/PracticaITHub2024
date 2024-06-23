@@ -1,0 +1,28 @@
+/* Обычный */
+@font-face {
+	font-family: 'Calibri';
+	src: url(./Font/calibri.ttf);
+}
+
+/* Жирный */
+@font-face {
+	font-family: 'Calibri Bold';
+	src: url(./Font/calibri_bold.ttf);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+}
